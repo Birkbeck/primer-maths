@@ -1,190 +1,428 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="en">
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+ <head> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=775669454"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=775669454"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=775669454"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=775669454"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/gsap.min.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=775669454"></script> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
+  <meta name="viewport" content="width=device-width" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="canonical" href="https://birkbeck.github.io/primer-maths/" /> 
+  <meta name="robots" content="index, follow" /> 
+  <meta name="formatter" content="RapidWeaver Elements (Plus license) 1.0.12 (23755)" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:site_name" content="Primer Course — Mathematics" /> 
+  <meta property="og:title" content="Home" /> 
+  <meta property="og:url" content="https://birkbeck.github.io/primer-maths/" /> 
+  <title>Home</title> 
+  <link href="index.css?rwcache=775669454" media="all" rel="stylesheet" type="text/css" /> 
+  <script src="rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/modal.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=775669454"></script> 
+  <script src="rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=775669454"></script> 
+  <style lang="css">
+    /* Required for alpine.js x-cloak directive to work */
+    [x-cloak] {
+        display: none !important;
+    }
 
-<head>
+    [data-rwx-droparea] {
+        /* width: 100%; */
+        min-width: 60px !important;
+        /* height: 100%; */
+    }
 
-	<meta charset="utf-8" />
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
 
-	<!-- Head content such as meta tags and encoding options, etc -->
-	
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="index, follow" />
-		
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@Birkbeck_CS">
-	<meta name="twitter:creator" content="@Birkbeck_CS">
-	<meta name="twitter:title" content="The Primer Course">
-	<meta name="twitter:image" content="https://birkbeck.github.io/primer-cs-may-2025/resources/ivona-roz-_ECEQIIF6OI-unsplash.jpg">
-	<meta name="twitter:url" content="https://birkbeck.github.io/primer-maths/index.html">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="School of Computing and Mathematical Sciences — Birkbeck, University of London">
-	<meta property="og:title" content="The Primer Course">
-	<meta property="og:image" content="https://birkbeck.github.io/primer-cs-may-2025/resources/ivona-roz-_ECEQIIF6OI-unsplash.jpg">
-	<meta property="og:url" content="https://birkbeck.github.io/primer-maths/index.html">
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+</style> 
+  <link rel="stylesheet" type="text/css" media="all" href="rw/styles/consolidated.css?rwcache=775669454" /> 
+ </head> 
+ <body class="bg-surface-50 dark:bg-surface-950"> 
+  <div x-data="navigationStandard('mobile-menu-rwDFF7DA6D_CBF1_4AA4_B92E_0C1CD0B49CBB')" class="relative z-50"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900 bg-opacity-[20%] dark:bg-opacity-[20%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-900 bg-opacity-[100%] dark:bg-opacity-[100%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 top-6 right-6 bottom-auto left-6" tabindex="-1"> 
+    <div class="flex items-center justify-between"> 
+     <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-50 hover:text-brand-500 order-last absolute top-8 right-8"> 
+      <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-50 hover:text-text-50"> 
+       <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+      </svg> </button> 
+    </div> 
+    <nav> 
+     <ul class=""> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="./">Home</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="key_information/">Key Information</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="sessions/">Sessions</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="reading_list/">Reading List</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="resources/">Resources</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="about/">About</a> 
+       </div> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </div> 
+  <div class="rwCEF4CF90_A3BB_401F_863C_E804E748CC29 group/container group/rwCEF4CF90_A3BB_401F_863C_E804E748CC29 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-3xl" data-filter-tags="" id=""> 
+   <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+    <header class="group/rwDFF7DA6D_CBF1_4AA4_B92E_0C1CD0B49CBB group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-5 mr-5 bg-gradient-to-b from-amber-100/[--bgGradientFromOpacity] [--bgGradientFromOpacity:100%] from-[0%] to-amber-500/[--bgGradientToOpacity] [--bgGradientToOpacity:100%] to-[100%]" id=""> 
+     <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-0 pb-0 pl-0 pr-0"> 
+      <!-- Logo --> 
+      <div class="flex lg:flex-1 pt-0 pb-0 pl-0 pr-0"> 
+       <a href="https://www.bbk.ac.uk/school/computing-and-mathematical-sciences" title="Primer Course — Mathematics" target="_self" class="-m-1.5 p-1.5"> <span class="sr-only">Primer Course — Mathematics</span> <img class="w-[100px] h-auto" src="../resources/birkbeck_logo_blue_line_cymk.jpg" alt="" /> </a> 
+      </div> 
+      <!-- Mobile menu button --> 
+      <div class="flex lg:hidden"> 
+       <button x-data type="button" class="transition-all duration-[300ms] delay-[0ms] ease-in-out inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-50 hover:text-brand-500" @click="$dispatch('navigation-standard-toggle', 'mobile-menu-rwDFF7DA6D_CBF1_4AA4_B92E_0C1CD0B49CBB')"> <span class="sr-only">Open main menu</span> 
+        <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"> 
+         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /> 
+        </svg> </button> 
+      </div> 
+      <!-- Desktop items --> 
+      <div class="hidden lg:flex gap-2"> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="./" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Home </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="key_information/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Key Information </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="sessions/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Sessions </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="reading_list/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Reading List </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="resources/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Resources </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="about/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> About </a> 
+       </div> 
+      </div> 
+      <!-- Desktop right items --> 
+      <div class="hidden lg:flex lg:justify-end lg:flex-1"> 
+      </div> 
+     </nav> 
+    </header>
+    <div class="rwD0000FD5_0D5A_4A59_8684_6624BDDA2F5E group/container group/rwD0000FD5_0D5A_4A59_8684_6624BDDA2F5E [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-5 ml-auto mr-auto" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+      <article class="prose prose-article w-auto h-auto mt-5 mb-5 ml-5 mr-5 pt-0 pb-0 pl-0 pr-0" id=""> 
+       <h3 class="text-center">School of Computing and Mathematical Sciences</h3> 
+      </article>
+      <article class="prose prose-article w-auto h-auto mt-5 mb-0 ml-5 mr-5 pt-0 pb-0 pl-0 pr-0" id=""> 
+       <p>This intensive short course is designed to prepare students for the mathematical and logical demands of both undergraduate and postgraduate degree programmes in the mathematical sciences at Birkbeck, University of London. The course will:</p> 
+      </article>
+      <div class="rw321DF96F_7F64_413C_A040_5E3D482321B5 group/container group/rw321DF96F_7F64_413C_A040_5E3D482321B5 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-5 mr-5" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-5 pr-5">
+        <ul class="group/rw7E96E225_A7F1_49D2_9D4D_F2473CA0C792 group/flex transform list-disc flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <li class="group/rwB7514496_6574_40D3_976A_6A5B5C852AB0 group/flex transform list-item flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <article class="prose prose-article w-auto h-auto" id=""> 
+           <p>Consolidate and extend key topics from A-level Mathematics, providing a strong foundation for undergraduate study.</p> 
+          </article> </li> 
+        </ul>
+        <ul class="group/rw28240F6E_A8FF_4CEE_88FC_AD41CF772988 group/flex transform list-disc flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <li class="group/rwD44B5623_91A9_4567_97DD_4747E148008C group/flex transform list-item flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <article class="prose prose-article w-auto h-auto" id=""> 
+           <p>Provide a rigorous refresher of core mathematical concepts for students entering postgraduate programmes.</p> 
+          </article> </li> 
+        </ul>
+        <ul class="group/rwB09260F0_B0E9_4D2C_9DDC_60191EC6F8F6 group/flex transform list-disc flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <li class="group/rwFF1A7E57_9A58_4B88_B20A_232BE249029B group/flex transform list-item flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <article class="prose prose-article w-auto h-auto" id=""> 
+           <p>Introduce the abstract and formal approach to mathematics characteristic of university-level study.</p> 
+          </article> </li> 
+        </ul>
+        <ul class="group/rwF2901963_2AEB_4AE5_8972_E7BFFBEC971E group/flex transform list-disc flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <li class="group/rw3246124C_26F5_4C14_9190_9A8F0FF7F4A1 group/flex transform list-item flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <article class="prose prose-article w-auto h-auto" id=""> 
+           <p>Develop advanced problem-solving skills and mathematical communication.</p> 
+          </article> </li> 
+        </ul>
+        <ul class="group/rw6DC34F28_C3A8_4632_87F4_B7F15A2B21DD group/flex transform list-disc flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <li class="group/rwEB5E15D1_5924_4FC6_9DBA_B8FE1EB0D6BE group/flex transform list-item flex w-full h-auto gap-x-md gap-y-md flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <article class="prose prose-article w-auto h-auto" id=""> 
+           <p>Build confidence in tackling unseen mathematical problems at an appropriate level.</p> 
+          </article> </li> 
+        </ul>
+       </div> 
+       <div class="z-0 transform-gpu overflow-hidden"> 
+       </div> 
+      </div>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </div>
+    <div class="w-auto h-0.5 mt-0 mb-0 ml-5 mr-5 pt-0 pb-0 pl-0 pr-0 bg-amber-500 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+      &nbsp; 
+    </div>
+    <article class="prose prose-article w-auto h-auto mt-5 mb-0 ml-5 mr-5 pt-0 pb-0 pl-0 pr-0 border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-800/[100%]" id=""> 
+     <p><strong>Please note</strong>: Due to unforeseen circumstances there will be no in-person sessions for the <em>September 2025</em> occurrence of this module. We apologise for any inconvenience caused and we hope that the provided materials form a reasonable substitute.</p> 
+    </article>
+    <div class="rwAA213EEF_DCD4_4266_8AAB_7E86A3027347 group/container group/rwAA213EEF_DCD4_4266_8AAB_7E86A3027347 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+      <article class="prose prose-article w-auto h-auto mt-5 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" id=""> 
+       <p class="text-center">© 2025 Birkbeck, University of London <a href="mailto:k.mannock@bbk.ac.uk">Contact Me (Keith Mannock)</a></p> 
+      </article>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </div>
+   </div> 
+   <div class="z-0 transform-gpu border-t-2 border-r-2 border-b-2 border-l-2 border-dotted rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-3xl border-surface-300/[100%] overflow-hidden"> 
+   </div> 
+  </div> 
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll("[data-reveal]");
+        revealElements.forEach((element, index) => {
+            element.style.visibility = "hidden";
+            element.style.transitionProperty = "none";
 
-	<!-- User defined head content -->
-	
+            const {
+                revealAnimation: animation = "fadeUpIn",
+                revealExitAnimation: exitAnimation = "fadeUpOut",
+                revealPlay: play = "enter-exit",
+                revealStart: start = "top bottom",
+                revealEnd: end = "top top",
+                revealDelay: delay = 0,
+                revealDuration: duration = 0.5,
+                revealEasing: easing = "power1.out",
+                revealDistance: distance = 200,
+                revealDegrees: degrees = 90,
+                revealScrub: scrub = false,
+                revealDebug: debug = false,
+                revealId,
+            } = element.dataset;
 
-	<!-- Meta tags -->
-	<!-- These in particular setup the viewport for mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            const id = `${revealId}-${index}`;
+            const wantsScrub = scrub === "true";
+            const wantsDebug = debug === "true";
+            const wantsExitAnimation = play == "enter-exit";
+            const playOnce = play == "enter-once";
+            const durationNumber = parseFloat(duration);
+            const delayNumber = parseFloat(delay);
+            const degreesNumber = parseFloat(degrees);
+            const degreesNumberOut = degreesNumber * -1;
+            
+            let triggeredOnce = false;
+            
+            const config = {
+                duration: durationNumber,
+                ease: easing,
+                delay: delayNumber,
+                distance: distance,
+                degrees: degreesNumber,
+                degreesOut: degreesNumberOut,
+                clearProps: "auto",
+                onComplete: () => {
+                    element.style.transitionProperty = "";
+                },
+            }
 
-  <!-- Browser title -->
-	<title>The Primer Course</title>
+            const markers = wantsDebug
+                ? {
+                    startColor: "green",
+                    endColor: "red",
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    indent: 20,
+                }
+                : false;
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" type="text/css" media="all" href="rw_common/themes/Voyager/consolidated.css?rwcache=774443073" />
-		
+            if (wantsScrub) {
+                gsap.effects[animation](element, {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: start,
+                        end: end,
+                        scrub: true,
+                        markers,
+                        id,
+                    },
+                    ...config
+                });
+            } else {
+                ScrollTrigger.create({
+                    trigger: element,
+                    start: start,
+                    end: end,
+                    markers,
+                    id,
+                    onEnter: () => {
+                        if (playOnce && triggeredOnce) return;
+                        element.style.transitionProperty = "none";
+                        triggeredOnce = true;
+                        gsap.effects[animation](element, config);
+                    },
+                    onLeave: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                    onEnterBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[animation](element, config);
+                        }
+                    },
+                    onLeaveBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                });
+            }
+        });
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("desktopSubmenu", () => ({
+            open: false,
+            closeTimeout: null,
+            closeDelay: 300,
 
-  <!-- Main Theme Stylesheet -->
-	
+            openMenu() {
+                clearTimeout(this.closeTimeout);
+                this.open = true;
+            },
 
-	<!-- RapidWeaver Color Picker Stylesheet -->
-	
+            startCloseTimer() {
+                this.closeTimeout = setTimeout(() => {
+                    this.closeMenu();
+                }, this.closeDelay);
+            },
 
-  <!-- Theme specific media queries -->
-	<!-- <link rel="stylesheet" href="%pathto(css/media_queries.css)%" /> -->
+            cancelCloseTimer() {
+                clearTimeout(this.closeTimeout);
+            },
 
-	<!-- User defined styles -->
-	
+            closeMenu() {
+                this.open = false;
+            },
 
-	<!-- Plugin injected code -->
-			<link rel='stylesheet' type='text/css' media='all' href='rw_common/plugins/stacks/stacks.css?rwcache=774443073' />
-		<link rel='stylesheet' type='text/css' media='all' href='files/stacks_page_page0.css?rwcache=774443073' />
-        <script type='text/javascript' charset='utf-8' src='rw_common/plugins/stacks/jquery-2.2.4.min.js?rwcache=774443073'></script>
-        
-        
-        
-		
-		<script type='text/javascript' charset='utf-8' src='files/stacks_page_page0.js?rwcache=774443073'></script>
-		
+            handleMouseEnter() {
+                this.openMenu();
+            },
 
+            handleMouseLeave() {
+                this.startCloseTimer();
+            },
+        }));
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("navigationStandard", (id = null) => ({
+            id,
+            open: false,
 
-</head>
+            init() {
+                window.addEventListener("navigation-standard-close", (e) => {
+                    if (this.id === e.detail) {
+                        this.close();
+                    }
+                });
 
-<body>
+                window.addEventListener("navigation-standard-toggle", (e) => {
+                    if (this.id === e.detail) {
+                        this.toggle();
+                    }
+                });
 
+                window.addEventListener("keyup", (e) => {
+                    if (e.key === "Escape") {
+                        this.close();
+                    }
+                });
 
-	<!-- Navigation in Overlay -->
-	<div class="navigation_overlay">
-		<div class="navigation_inner">
+                this.$el.addEventListener("click", (e) => {
+                    const link = e.target.closest("a");
+                    if (link && this.open) {
+                        this.close();
+                    }
+                });
 
-			<div id="navigation_close_button"><i class="fa fa-close fa-2x"></i></div>
+                this.$watch("open", (value) => {
+                    if (value) {
+                        document.body.style.overflow = "hidden";
+                    } else {
+                        document.body.style.overflow = "auto";
+                    }
+                });
+            },
 
-			<div class="navigation_alignment">
-				<div class="container">
-							<div class="navigation_overlay_site_logo"><img src="rw_common/images/For_students_who_do_more.jpg" width="600" height="280" alt="Birkbeck, University of London logo"/></div>
-							<h1 class="navigation_overlay_site_title">School of Computing and Mathematical Sciences &mdash; Birkbeck, University of London</h1>
-							<div id="social_badges"></div>
-							<!-- <h2 class="navigation_overlay_site_slogan">For students who do more</h2> -->
-							<div id="main_navigation">
-								<ul><li><a href="./" rel="" id="current">Home</a></li><li><a href="key-info/" rel="">Key Information</a></li><li><a href="reading-list/" rel="">Reading List</a></li><li><a href="resources/" rel="">Resources</a></li><li><a href="sessions/" rel="">Sessions</a></li><li><a href="about/" rel="">About</a></li></ul>
-							</div>
-				</div> <!-- container -->
-			</div> <!-- main_navigation -->
-		</div> <!-- navigation inner -->
-	</div> <!-- navigation_overlay -->
+            toggle() {
+                if (this.open) {
+                    return this.close();
+                }
 
-	<div id="scroll_up_destination"></div>
+                this.open = true;
+            },
 
-	<div class="blur_wrapper">
+            close() {
+                if (!this.open) {
+                    return;
+                }
 
-		<!-- Path Theme -->
+                this.open = false;
+            },
 
-		<!-- Banner, Banner Overlay and Banner Content -->
-		<div id="banner">
-			<!-- Branding // Site Title, Logo and Navigation -->
-			<div id="sticky_container">
-				<div class="navigation_bar container">
-					<div class="site_logo"><img src="rw_common/images/For_students_who_do_more.jpg" width="600" height="280" alt="Birkbeck, University of London logo"/></div> <h1 class="site_title">School of Computing and Mathematical Sciences &mdash; Birkbeck, University of London</h1>
-					<div id="navigation_toggle"><i class="fa fa-bars"></i></div>
-				</div>
-			</div>
+            backdrop: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click"]() {
+                    this.close();
+                },
+            },
 
-			<div id="inner_banner">
-				<!-- Site Slogan -->
-				<div id="banner_content">
-					<h2 id="slogan">For students who do more</h2>
-				</div>
-			</div>
-
-			<!-- Breadcrumb Trail -->
-			<div class="banner_breadcrumb">
-				<div class="container width_adjustment">
-					<ul><li><a href="./">Home</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</li></ul>
-				</div>
-			</div>
-
-		</div>
-
-		<div id="content_container" class="container width_adjustment">
-			<div class="row">
-
-			  <div id="content">
-					
-<div id='stacks_out_1' class='stacks_top'><div id='stacks_in_1' class=''><div id='stacks_out_23' class='stacks_out'><div id='stacks_in_23' class='stacks_in stack_stack'><div id='stacks_out_212' class='stacks_out'><div id='stacks_in_212' class='stacks_in com_yourhead_stack_header_stack'><h1>Primer Course on Mathematics and Statistics</h1></div></div><div id='stacks_out_207' class='stacks_out'><div id='stacks_in_207' class='stacks_in uk_co_doobox_quarentine_stack'><!-- Start doobox quarentine html -->
-
-
-
-<!-- End doobox quarentine html -->
-
- 
-
-
-	
-
-
-
-
-
-
-    
-    </div></div><div id='stacks_out_162' class='stacks_out'><div id='stacks_in_162' class='stacks_in uk_co_doobox_responsiveshim_stack'><!-- Start Responsive Shim stack template --><div class="stacks_in_162shim"></div><!-- End Responsive Shim stack template --></div></div><div id='stacks_out_71' class='stacks_out'><div id='stacks_in_71' class='stacks_in markdown_stack'><p>Usually all sessions will be held remotely via MS Teams which run from 6 to 8 p.m. unless otherwise specified.<br/></p>
-
-<p><strong>Please note:</strong> For this year, 2025, this primer will be via distance learning only as there is no staff member available to present the course in Septermber; apologies for the inconvenience caused.</p></div></div></div></div></div></div>
-
-					<div class="clearer"></div>
-				</div>
-
-			  <aside id="sidebar">
-					<h3 id="sidebar_title"></h3>
-					
-
-					<div id="archives">
-						
-					</div>
-				</aside>
-
-			</div>
-		</div>
-
-		<footer>
-			<div class="rapidweaver_footer container width_adjustment">
-				&copy; 2013-25 Birkbeck, University of London <a href="#" class="C8EAD5FC-97B6-4537-B474-EB5F24D7A634">Contact Me (Keith Mannock)</a><script type="text/javascript">(function(){ var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":k.";var _rwObsfuscatedHref3 = "man";var _rwObsfuscatedHref4 = "noc";var _rwObsfuscatedHref5 = "k@b";var _rwObsfuscatedHref6 = "bk.";var _rwObsfuscatedHref7 = "ac.";var _rwObsfuscatedHref8 = "uk";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7+_rwObsfuscatedHref8; Array.from(document.getElementsByClassName("C8EAD5FC-97B6-4537-B474-EB5F24D7A634")).forEach(function(x){x.href = _rwObsfuscatedHref});})()</script>
-			</div>
-		</footer>
-
-	</div>
-
-	<!-- jQuery 1.8 is included in the theme internally -->
-  <script src="rw_common/themes/Voyager/js/jquery.min.js?rwcache=774443073"></script>
-
-	<!-- Base RapidWeaver javascript -->
-	<script async type="text/javascript" src="rw_common/themes/Voyager/javascript.js?rwcache=774443073"></script>
-
-  <!-- Elixir theme specific javascript, along with jQuery Easing and a few other elements -->
-  <script src="rw_common/themes/Voyager/js/elixir.js?rwcache=774443073"></script>
-
-	<!-- Style variations -->
-	<script src="rw_common/themes/Voyager/js/fitvids.js?rwcache=774443073"></script>
-		<script src="rw_common/themes/Voyager/js/sidebar/sidebar_hidden.js?rwcache=774443073"></script>
-		
-
-	<!-- User defined javascript -->
-	
-
-<rapidweaver-badge url="https://www.bbk.ac.uk" position-x="left" position-y="bottom" transition="slide" delay-type="time" delay="1000" mode="auto" target="_blank"><img src= "rw_common/assets/bbklogo-shield-only.png" alt="Birkbeck Icon" /><p>Birkbeck, University of London</p></rapidweaver-badge>
-<script src="rw_common/assets/rw-badge.js?rwcache=774443073"></script>
-</body>
-
+            menu: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click.away"]() {
+                    this.close();
+                },
+            },
+        }));
+    });
+</script>  
+ </body>
 </html>

@@ -1,0 +1,16 @@
+{
+    "APP_ENV": "staging",
+    "email": {
+        "driver": "smtp",
+        "from_email": "staging@example.com",
+        "smtp_host": "smtp.staging.com"
+    },
+    "forms": {
+        "contact": {
+            "email": {
+                "enabled": true,
+                "to": "staging@example.com"
+            }
+        }
+    }
+}

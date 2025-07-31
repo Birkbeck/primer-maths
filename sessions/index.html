@@ -1,170 +1,647 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="en">
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+ <head> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=775669454"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=775669454"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=775669454"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=775669454"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/gsap.min.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=775669454"></script> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
+  <meta name="viewport" content="width=device-width" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="canonical" href="https://birkbeck.github.io/primer-maths/sessions/" /> 
+  <meta name="robots" content="index, follow" /> 
+  <meta name="formatter" content="RapidWeaver Elements (Plus license) 1.0.12 (23755)" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:site_name" content="Primer Course — Mathematics" /> 
+  <meta property="og:title" content="Sessions" /> 
+  <meta property="og:url" content="https://birkbeck.github.io/primer-maths/sessions/" /> 
+  <title>Sessions</title> 
+  <link href="index.css?rwcache=775669454" media="all" rel="stylesheet" type="text/css" /> 
+  <script src="../rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/modal.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=775669454"></script> 
+  <script src="../rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=775669454"></script> 
+  <style lang="css">
+    /* Required for alpine.js x-cloak directive to work */
+    [x-cloak] {
+        display: none !important;
+    }
 
-<head>
+    [data-rwx-droparea] {
+        /* width: 100%; */
+        min-width: 60px !important;
+        /* height: 100%; */
+    }
 
-	<meta charset="utf-8" />
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
 
-	<!-- Head content such as meta tags and encoding options, etc -->
-	
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="index, follow" />
-		
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@Birkbeck_CS">
-	<meta name="twitter:creator" content="@Birkbeck_CS">
-	<meta name="twitter:title" content="Sessions | School of Computing and Mathematical Sciences — Birkbeck, University of London">
-	<meta name="twitter:image" content="https://birkbeck.github.io/primer-cs-may-2025/resources/ivona-roz-_ECEQIIF6OI-unsplash.jpg">
-	<meta name="twitter:url" content="https://birkbeck.github.io/primer-maths/sessions/index.html">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="School of Computing and Mathematical Sciences — Birkbeck, University of London">
-	<meta property="og:title" content="Sessions | School of Computing and Mathematical Sciences — Birkbeck, University of London">
-	<meta property="og:image" content="https://birkbeck.github.io/primer-cs-may-2025/resources/ivona-roz-_ECEQIIF6OI-unsplash.jpg">
-	<meta property="og:url" content="https://birkbeck.github.io/primer-maths/sessions/index.html">
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+</style> 
+  <link rel="stylesheet" type="text/css" media="all" href="../rw/styles/consolidated.css?rwcache=775669454" /> 
+ </head> 
+ <body class="bg-surface-50 dark:bg-surface-950"> 
+  <div x-data="navigationStandard('mobile-menu-rw1B87658F_8F97_4F3E_91BF_E9D6BE70E259')" class="relative z-50"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900 bg-opacity-[20%] dark:bg-opacity-[20%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-900 bg-opacity-[100%] dark:bg-opacity-[100%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 top-6 right-6 bottom-auto left-6" tabindex="-1"> 
+    <div class="flex items-center justify-between"> 
+     <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-50 hover:text-brand-500 order-last absolute top-8 right-8"> 
+      <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-50 hover:text-text-50"> 
+       <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+      </svg> </button> 
+    </div> 
+    <nav> 
+     <ul class=""> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../">Home</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../key_information/">Key Information</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../sessions/">Sessions</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../reading_list/">Reading List</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../resources/">Resources</a> 
+       </div> </li> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../about/">About</a> 
+       </div> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </div> 
+  <div class="rw23F9EF23_FD87_403A_9804_16876369BFDC group/container group/rw23F9EF23_FD87_403A_9804_16876369BFDC [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+   <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+    <header class="group/rw1B87658F_8F97_4F3E_91BF_E9D6BE70E259 group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-5 mr-5 bg-gradient-to-b from-amber-100/[--bgGradientFromOpacity] [--bgGradientFromOpacity:100%] from-[0%] to-amber-500/[--bgGradientToOpacity] [--bgGradientToOpacity:100%] to-[100%]" id=""> 
+     <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-0 pb-0 pl-0 pr-0"> 
+      <!-- Logo --> 
+      <div class="flex lg:flex-1 pt-0 pb-0 pl-0 pr-0"> 
+       <a href="https://www.bbk.ac.uk/school/computing-and-mathematical-sciences" title="Primer Course — Mathematics" target="_self" class="-m-1.5 p-1.5"> <span class="sr-only">Primer Course — Mathematics</span> <img class="w-[100px] h-auto" src="../../resources/birkbeck_logo_blue_line_cymk.jpg" alt="" /> </a> 
+      </div> 
+      <!-- Mobile menu button --> 
+      <div class="flex lg:hidden"> 
+       <button x-data type="button" class="transition-all duration-[300ms] delay-[0ms] ease-in-out inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-50 hover:text-brand-500" @click="$dispatch('navigation-standard-toggle', 'mobile-menu-rw1B87658F_8F97_4F3E_91BF_E9D6BE70E259')"> <span class="sr-only">Open main menu</span> 
+        <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"> 
+         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /> 
+        </svg> </button> 
+      </div> 
+      <!-- Desktop items --> 
+      <div class="hidden lg:flex gap-2"> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="../" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Home </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="../key_information/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Key Information </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="../sessions/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Sessions </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="../reading_list/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Reading List </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="../resources/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Resources </a> 
+       </div> 
+       <div x-data="desktopSubmenu" class="relative"> 
+        <a href="../about/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] tracking-normal hover:text-text-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> About </a> 
+       </div> 
+      </div> 
+      <!-- Desktop right items --> 
+      <div class="hidden lg:flex lg:justify-end lg:flex-1"> 
+      </div> 
+     </nav> 
+    </header>
+   </div> 
+   <div class="z-0 transform-gpu overflow-hidden"> 
+   </div> 
+  </div>
+  <div class="rw94A6BA6E_6160_4B87_AE5B_8FFB4B8CF7FE group/container group/rw94A6BA6E_6160_4B87_AE5B_8FFB4B8CF7FE [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-5 mr-5" data-filter-tags="" id=""> 
+   <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+    <article class="prose prose-article w-auto h-auto mt-5 mb-5 ml-5 mr-5 pt-0 pb-0 pl-0 pr-0" id=""> 
+     <h3 class="text-center">School of Computing and Mathematical Sciences</h3> 
+    </article>
+    <article class="prose prose-article w-auto h-auto mt-5 mb-0 ml-5 mr-5 pt-0 pb-0 pl-0 pr-0 border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-800/[100%]" id=""> 
+     <p><strong>Please note</strong>: Due to unforeseen circumstances there will be no in-person sessions for the <em>September 2025</em> occurrence of this module. We apologise for any inconvenience caused and we hope that the provided materials form a reasonable substitute.</p> 
+    </article>
+    <article class="prose prose-article w-auto h-auto mt-2 mb-2 ml-5 mr-0 pt-0 pb-0 pl-0 pr-0" id=""> 
+     <h4>Course Structure</h4> 
+    </article>
+    <article class="prose prose-article w-auto h-auto mt-0 mb-0 ml-5 mr-0 pt-0 pb-0 pl-0 pr-0" id=""> 
+     <p>The course is divided into six, three-hour sessions. Each session will consist of a mix of lectures, interactive problem-solving, and group work, with advanced problems and concepts specifically aimed at postgraduate-level preparation.</p> 
+    </article>
+    <div class="rw6138A566_D0E9_4384_924C_FF5EA99B9EB4 group/container group/rw6138A566_D0E9_4384_924C_FF5EA99B9EB4 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-5 mr-5" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+      <div class="group transform block w-auto h-auto" :aria-label="'Accordion section rwBB0F30DF_095F_42CB_ADD8_22B4BCF46935'" :id="$id('accordion')" aria-roledescription="accordion" data-filter-tags="" data-open="false" id="" role="group" x-bind="details" x-data="() => accordion($id('accordion'), {'groupId':'rw6138A566_D0E9_4384_924C_FF5EA99B9EB4','openOnLoad':false})" x-id="['accordion']"> 
+       <div x-bind="summary" :id="'accordion-header-' + ''" role="button" :aria-expanded="open.toString()" :aria-controls="'accordion-content-' + ''" class="flex justify-between items-center text-left font-semibold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-[300ms] delay-[0ms] ease-in-out pt-md pb-md pl-md pr-md hover:bg--50 aria-expanded:bg--50 bg--50"> 
+        <span class="flex-1 text-left"> 
+         <article class="prose prose-article w-auto h-auto" id=""> 
+          <p>Session 1: Mathematical Foundations</p> 
+         </article> </span> 
+        <span class="[&amp;>svg]:shrink-0 [&amp;>svg]:transition-transform [&amp;>svg]:duration-300 [&amp;>svg]:size-[24px] order-last [&amp;>svg]:rotate-[90deg] [&amp;>svg]:text-surface-900 [&amp;>svg]:group-data-[open=false]:rotate-[180deg] [&amp;>svg]:group-data-[open=false]:text-surface-900" aria-hidden="true"> 
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""> 
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /> 
+         </svg> </span> 
+       </div> 
+       <div x-bind="content" x-collapse style="display: none;" :id="'accordion-content-' + ''" role="region" :aria-hidden="(!open).toString()" :aria-labelledby="'accordion-header-' + ''" class=""> 
+        <article class="prose prose-article w-auto h-auto" id=""> 
+         <p>Focus: This session will establish the language of higher mathematics, bridging the gap between procedural calculation and the emphasis on proof and formal reasoning.</p>
+         <p>&nbsp;</p>
+         <p>Topics:</p>
+         <p>&nbsp;</p>
+         <p>Set Theory: Notation, operations (union, intersection, complement), Venn diagrams, power sets, and Cartesian products. Introduction to cardinality.</p>
+         <p>&nbsp;</p>
+         <p>Logic and Proof: Propositional logic, quantifiers (∀, ∃), and methods of proof (direct, contrapositive, contradiction, induction).</p>
+         <p>&nbsp;</p>
+         <p>Functions: Formal definition (domain, codomain, range), properties (injectivity, surjectivity, bijectivity), composition, and inverse functions.</p>
+         <p>&nbsp;</p>
+         <p>Activities:</p>
+         <p>&nbsp;</p>
+         <p>Interactive exercises on set theory and logical notation.</p>
+         <p>&nbsp;</p>
+         <p>Group work on constructing proofs of varying difficulty.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Problems involving proofs on the cardinality of sets and properties of functions.</p>
+         <p>&nbsp;</p>
+         <p>&nbsp;</p> 
+        </article> 
+       </div> 
+      </div>
+      <div class="group transform block w-auto h-auto" :aria-label="'Accordion section rwACCBCF72_631C_4266_953A_B76F1A73F471'" :id="$id('accordion')" aria-roledescription="accordion" data-filter-tags="" data-open="false" id="" role="group" x-bind="details" x-data="() => accordion($id('accordion'), {'groupId':'rw6138A566_D0E9_4384_924C_FF5EA99B9EB4','openOnLoad':false})" x-id="['accordion']"> 
+       <div x-bind="summary" :id="'accordion-header-' + ''" role="button" :aria-expanded="open.toString()" :aria-controls="'accordion-content-' + ''" class="flex justify-between items-center text-left font-semibold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-[300ms] delay-[0ms] ease-in-out pt-md pb-md pl-md pr-md hover:bg--50 aria-expanded:bg--50 bg--50"> 
+        <span class="flex-1 text-left"> 
+         <article class="prose prose-article w-auto h-auto" id=""> 
+          <p>Session 2: Advanced Algebra and Complex Numbers</p> 
+         </article> </span> 
+        <span class="[&amp;>svg]:shrink-0 [&amp;>svg]:transition-transform [&amp;>svg]:duration-300 [&amp;>svg]:size-[24px] order-last [&amp;>svg]:rotate-[90deg] [&amp;>svg]:text-surface-900 [&amp;>svg]:group-data-[open=false]:rotate-[180deg] [&amp;>svg]:group-data-[open=false]:text-surface-900" aria-hidden="true"> 
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""> 
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /> 
+         </svg> </span> 
+       </div> 
+       <div x-bind="content" x-collapse style="display: none;" :id="'accordion-content-' + ''" role="region" :aria-hidden="(!open).toString()" :aria-labelledby="'accordion-header-' + ''" class=""> 
+        <article class="prose prose-article w-auto h-auto" id=""> 
+         <p>Focus: This session will consolidate core algebraic skills and delve into the theory of complex numbers, essential for many areas of advanced mathematics and physics.</p>
+         <p>&nbsp;</p>
+         <p>Topics:</p>
+         <p>&nbsp;</p>
+         <p>Polynomials and Rational Functions: Factor/remainder theorems, roots of polynomials, and decomposition into partial fractions.</p>
+         <p>&nbsp;</p>
+         <p>Complex Numbers: Arithmetic, the Argand diagram, modulus-argument form, Euler's formula (e </p>
+         <p>iθ</p>
+         <p> =cosθ+isinθ), and De Moivre's theorem.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Introduction to abstract algebraic structures (definition of a group).</p>
+         <p>&nbsp;</p>
+         <p>Activities:</p>
+         <p>&nbsp;</p>
+         <p>Practice problems on partial fractions and polynomial equations.</p>
+         <p>&nbsp;</p>
+         <p>Exercises using Euler's formula and De Moivre's theorem to solve equations and prove trigonometric identities.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Identifying whether simple sets with a binary operation form a group.</p> 
+        </article> 
+       </div> 
+      </div>
+      <div class="group transform block w-auto h-auto" :aria-label="'Accordion section rwE3337A3F_0A08_404F_A87D_E138F918A850'" :id="$id('accordion')" aria-roledescription="accordion" data-filter-tags="" data-open="false" id="" role="group" x-bind="details" x-data="() => accordion($id('accordion'), {'groupId':'rw6138A566_D0E9_4384_924C_FF5EA99B9EB4','openOnLoad':false})" x-id="['accordion']"> 
+       <div x-bind="summary" :id="'accordion-header-' + ''" role="button" :aria-expanded="open.toString()" :aria-controls="'accordion-content-' + ''" class="flex justify-between items-center text-left font-semibold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-[300ms] delay-[0ms] ease-in-out pt-md pb-md pl-md pr-md hover:bg--50 aria-expanded:bg--50 bg--50"> 
+        <span class="flex-1 text-left"> 
+         <article class="prose prose-article w-auto h-auto" id=""> 
+          <p>ession 3: Calculus I - Differentiation and Series</p> 
+         </article> </span> 
+        <span class="[&amp;>svg]:shrink-0 [&amp;>svg]:transition-transform [&amp;>svg]:duration-300 [&amp;>svg]:size-[24px] order-last [&amp;>svg]:rotate-[90deg] [&amp;>svg]:text-surface-900 [&amp;>svg]:group-data-[open=false]:rotate-[180deg] [&amp;>svg]:group-data-[open=false]:text-surface-900" aria-hidden="true"> 
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""> 
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /> 
+         </svg> </span> 
+       </div> 
+       <div x-bind="content" x-collapse style="display: none;" :id="'accordion-content-' + ''" role="region" :aria-hidden="(!open).toString()" :aria-labelledby="'accordion-header-' + ''" class=""> 
+        <article class="prose prose-article w-auto h-auto" id=""> 
+         <p>Focus: This session will deepen the understanding of differentiation and introduce the concept of approximating functions with infinite series.</p>
+         <p>&nbsp;</p>
+         <p>Topics:</p>
+         <p>&nbsp;</p>
+         <p>Limits and Continuity: An intuitive introduction, leading to differentiation from first principles.</p>
+         <p>&nbsp;</p>
+         <p>Advanced Differentiation: Chain, product, and quotient rules; implicit and parametric differentiation.</p>
+         <p>&nbsp;</p>
+         <p>Taylor and Maclaurin Series: Using series to approximate functions.</p>
+         <p>&nbsp;</p>
+         <p>Applications: Optimisation and curve sketching.</p>
+         <p>&nbsp;</p>
+         <p>Activities:</p>
+         <p>&nbsp;</p>
+         <p>Worked examples of advanced differentiation techniques.</p>
+         <p>&nbsp;</p>
+         <p>Finding Taylor series for common functions.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Discussion of the formal (ϵ−δ) definition of a limit and conditions for convergence of a series.</p> 
+        </article> 
+       </div> 
+      </div>
+      <div class="group transform block w-auto h-auto" :aria-label="'Accordion section rw6908EF17_E76B_4D67_B8B5_97D5BA6452E3'" :id="$id('accordion')" aria-roledescription="accordion" data-filter-tags="" data-open="false" id="" role="group" x-bind="details" x-data="() => accordion($id('accordion'), {'groupId':'rw6138A566_D0E9_4384_924C_FF5EA99B9EB4','openOnLoad':false})" x-id="['accordion']"> 
+       <div x-bind="summary" :id="'accordion-header-' + ''" role="button" :aria-expanded="open.toString()" :aria-controls="'accordion-content-' + ''" class="flex justify-between items-center text-left font-semibold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-[300ms] delay-[0ms] ease-in-out pt-md pb-md pl-md pr-md hover:bg--50 aria-expanded:bg--50 bg--50"> 
+        <span class="flex-1 text-left"> 
+         <article class="prose prose-article w-auto h-auto" id=""> 
+          <p>Session 4: Calculus II - Integration and Differential Equations</p> 
+         </article> </span> 
+        <span class="[&amp;>svg]:shrink-0 [&amp;>svg]:transition-transform [&amp;>svg]:duration-300 [&amp;>svg]:size-[24px] order-last [&amp;>svg]:rotate-[90deg] [&amp;>svg]:text-surface-900 [&amp;>svg]:group-data-[open=false]:rotate-[180deg] [&amp;>svg]:group-data-[open=false]:text-surface-900" aria-hidden="true"> 
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""> 
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /> 
+         </svg> </span> 
+       </div> 
+       <div x-bind="content" x-collapse style="display: none;" :id="'accordion-content-' + ''" role="region" :aria-hidden="(!open).toString()" :aria-labelledby="'accordion-header-' + ''" class=""> 
+        <article class="prose prose-article w-auto h-auto" id=""> 
+         <p>Focus: This session will cover a range of integration techniques and their application to solving differential equations.</p>
+         <p>&nbsp;</p>
+         <p>Topics:</p>
+         <p>&nbsp;</p>
+         <p>Advanced Integration Techniques: Integration by substitution and by parts.</p>
+         <p>&nbsp;</p>
+         <p>Differential Equations: Solving first-order separable and linear differential equations.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Introduction to second-order homogeneous differential equations and an overview of multivariable calculus (partial derivatives and gradients).</p>
+         <p>&nbsp;</p>
+         <p>Activities:</p>
+         <p>&nbsp;</p>
+         <p>Practice problems on a variety of integration techniques.</p>
+         <p>&nbsp;</p>
+         <p>Solving real-world problems using first-order differential equations.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Solving simple second-order differential equations and calculating partial derivatives of functions of two variables.</p> 
+        </article> 
+       </div> 
+      </div>
+      <div class="group transform block w-auto h-auto" :aria-label="'Accordion section rw370A8C86_8EE1_429C_9061_7FA7B41EF087'" :id="$id('accordion')" aria-roledescription="accordion" data-filter-tags="" data-open="false" id="" role="group" x-bind="details" x-data="() => accordion($id('accordion'), {'groupId':'rw6138A566_D0E9_4384_924C_FF5EA99B9EB4','openOnLoad':false})" x-id="['accordion']"> 
+       <div x-bind="summary" :id="'accordion-header-' + ''" role="button" :aria-expanded="open.toString()" :aria-controls="'accordion-content-' + ''" class="flex justify-between items-center text-left font-semibold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-[300ms] delay-[0ms] ease-in-out pt-md pb-md pl-md pr-md hover:bg--50 aria-expanded:bg--50 bg--50"> 
+        <span class="flex-1 text-left"> 
+         <article class="prose prose-article w-auto h-auto" id=""> 
+          <p>Session 5: Linear Algebra</p> 
+         </article> </span> 
+        <span class="[&amp;>svg]:shrink-0 [&amp;>svg]:transition-transform [&amp;>svg]:duration-300 [&amp;>svg]:size-[24px] order-last [&amp;>svg]:rotate-[90deg] [&amp;>svg]:text-surface-900 [&amp;>svg]:group-data-[open=false]:rotate-[180deg] [&amp;>svg]:group-data-[open=false]:text-surface-900" aria-hidden="true"> 
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""> 
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /> 
+         </svg> </span> 
+       </div> 
+       <div x-bind="content" x-collapse style="display: none;" :id="'accordion-content-' + ''" role="region" :aria-hidden="(!open).toString()" :aria-labelledby="'accordion-header-' + ''" class=""> 
+        <article class="prose prose-article w-auto h-auto" id=""> 
+         <p>Focus: This session will introduce the fundamental concepts of linear algebra, a cornerstone of modern mathematics, data science, and computational modelling.</p>
+         <p>&nbsp;</p>
+         <p>Topics:</p>
+         <p>&nbsp;</p>
+         <p>Vectors, Matrices, and Determinants: A review of arithmetic, scalar (dot) product, and vector (cross) product.</p>
+         <p>&nbsp;</p>
+         <p>Systems of Linear Equations: Solving systems using Gaussian elimination.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Introduction to abstract vector spaces, basis, dimension, and the concepts of eigenvalues and eigenvectors.</p>
+         <p>&nbsp;</p>
+         <p>Activities:</p>
+         <p>&nbsp;</p>
+         <p>Exercises on vector manipulation and matrix calculations.</p>
+         <p>&nbsp;</p>
+         <p>Solving systems of linear equations.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Finding the eigenvalues and eigenvectors of 2x2 and 3x3 matrices and determining if a set of vectors forms a basis for a vector space.</p> 
+        </article> 
+       </div> 
+      </div>
+      <div class="group transform block w-auto h-auto" :aria-label="'Accordion section rw1EB7D152_9D9E_4516_9078_079D462BE6D7'" :id="$id('accordion')" aria-roledescription="accordion" data-filter-tags="" data-open="false" id="" role="group" x-bind="details" x-data="() => accordion($id('accordion'), {'groupId':'rw6138A566_D0E9_4384_924C_FF5EA99B9EB4','openOnLoad':false})" x-id="['accordion']"> 
+       <div x-bind="summary" :id="'accordion-header-' + ''" role="button" :aria-expanded="open.toString()" :aria-controls="'accordion-content-' + ''" class="flex justify-between items-center text-left font-semibold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-[300ms] delay-[0ms] ease-in-out pt-md pb-md pl-md pr-md hover:bg--50 aria-expanded:bg--50 bg--50"> 
+        <span class="flex-1 text-left"> 
+         <article class="prose prose-article w-auto h-auto" id=""> 
+          <p>Session 6: Probability and Statistics</p> 
+         </article> </span> 
+        <span class="[&amp;>svg]:shrink-0 [&amp;>svg]:transition-transform [&amp;>svg]:duration-300 [&amp;>svg]:size-[24px] order-last [&amp;>svg]:rotate-[90deg] [&amp;>svg]:text-surface-900 [&amp;>svg]:group-data-[open=false]:rotate-[180deg] [&amp;>svg]:group-data-[open=false]:text-surface-900" aria-hidden="true"> 
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""> 
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /> 
+         </svg> </span> 
+       </div> 
+       <div x-bind="content" x-collapse style="display: none;" :id="'accordion-content-' + ''" role="region" :aria-hidden="(!open).toString()" :aria-labelledby="'accordion-header-' + ''" class=""> 
+        <article class="prose prose-article w-auto h-auto" id=""> 
+         <p>Focus: This session will provide a solid foundation in probability and statistics, essential for degrees in mathematics, statistics, data science, and quantitative finance.</p>
+         <p>&nbsp;</p>
+         <p>Topics:</p>
+         <p>&nbsp;</p>
+         <p>Probability Theory: Set-based probability, conditional probability, and Bayes' Theorem.</p>
+         <p>&nbsp;</p>
+         <p>Random Variables: Discrete (Binomial, Poisson) and continuous (Normal, Exponential) probability distributions; expectation and variance.</p>
+         <p>&nbsp;</p>
+         <p>Hypothesis Testing: The fundamental concepts and terminology.</p>
+         <p>&nbsp;</p>
+         <p>Activities:</p>
+         <p>&nbsp;</p>
+         <p>Problem-solving tasks using Bayes' Theorem and probability distributions.</p>
+         <p>&nbsp;</p>
+         <p>A guided introduction to conducting a simple hypothesis test.</p>
+         <p>&nbsp;</p>
+         <p>PG Focus: Introduction to probability density functions (PDFs) and cumulative distribution functions (CDFs) for continuous random variables.</p> 
+        </article> 
+       </div> 
+      </div>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </div>
+   </div> 
+   <div class="z-0 transform-gpu overflow-hidden"> 
+   </div> 
+  </div>
+  <div class="rwCFC56109_27FB_4607_B2BD_D03AE749DCFF group/container group/rwCFC56109_27FB_4607_B2BD_D03AE749DCFF [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+   <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+    <article class="prose prose-article w-auto h-auto mt-5 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" id=""> 
+     <p class="text-center">© 2025 Birkbeck, University of London <a href="mailto:k.mannock@bbk.ac.uk">Contact Me (Keith Mannock)</a></p> 
+    </article>
+   </div> 
+   <div class="z-0 transform-gpu overflow-hidden"> 
+   </div> 
+  </div> 
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll("[data-reveal]");
+        revealElements.forEach((element, index) => {
+            element.style.visibility = "hidden";
+            element.style.transitionProperty = "none";
 
-	<!-- User defined head content -->
-	
+            const {
+                revealAnimation: animation = "fadeUpIn",
+                revealExitAnimation: exitAnimation = "fadeUpOut",
+                revealPlay: play = "enter-exit",
+                revealStart: start = "top bottom",
+                revealEnd: end = "top top",
+                revealDelay: delay = 0,
+                revealDuration: duration = 0.5,
+                revealEasing: easing = "power1.out",
+                revealDistance: distance = 200,
+                revealDegrees: degrees = 90,
+                revealScrub: scrub = false,
+                revealDebug: debug = false,
+                revealId,
+            } = element.dataset;
 
-	<!-- Meta tags -->
-	<!-- These in particular setup the viewport for mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            const id = `${revealId}-${index}`;
+            const wantsScrub = scrub === "true";
+            const wantsDebug = debug === "true";
+            const wantsExitAnimation = play == "enter-exit";
+            const playOnce = play == "enter-once";
+            const durationNumber = parseFloat(duration);
+            const delayNumber = parseFloat(delay);
+            const degreesNumber = parseFloat(degrees);
+            const degreesNumberOut = degreesNumber * -1;
+            
+            let triggeredOnce = false;
+            
+            const config = {
+                duration: durationNumber,
+                ease: easing,
+                delay: delayNumber,
+                distance: distance,
+                degrees: degreesNumber,
+                degreesOut: degreesNumberOut,
+                clearProps: "auto",
+                onComplete: () => {
+                    element.style.transitionProperty = "";
+                },
+            }
 
-  <!-- Browser title -->
-	<title>Sessions | School of Computing and Mathematical Sciences — Birkbeck, University of London</title>
+            const markers = wantsDebug
+                ? {
+                    startColor: "green",
+                    endColor: "red",
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    indent: 20,
+                }
+                : false;
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/Voyager/consolidated.css?rwcache=774443073" />
-		
+            if (wantsScrub) {
+                gsap.effects[animation](element, {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: start,
+                        end: end,
+                        scrub: true,
+                        markers,
+                        id,
+                    },
+                    ...config
+                });
+            } else {
+                ScrollTrigger.create({
+                    trigger: element,
+                    start: start,
+                    end: end,
+                    markers,
+                    id,
+                    onEnter: () => {
+                        if (playOnce && triggeredOnce) return;
+                        element.style.transitionProperty = "none";
+                        triggeredOnce = true;
+                        gsap.effects[animation](element, config);
+                    },
+                    onLeave: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                    onEnterBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[animation](element, config);
+                        }
+                    },
+                    onLeaveBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                });
+            }
+        });
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("accordion", (id, options = {}) => ({
+            open: options.openOnLoad || false,
+            id,
+            options,
+            init() {
+                this.$watch("open", (value) => {
+                    if (value && this.options.groupId) {
+                        this.$dispatch("close-accordions-in-group", {
+                            groupId: this.options.groupId,
+                            id: this.id,
+                        });
+                    }
+                });
+            },
 
-  <!-- Main Theme Stylesheet -->
-	
+            details: {
+                ["@close-accordions-in-group.window"](e) {
+                    const { groupId, id } = e.detail;
+                    console.log(groupId, this.options.groupId, id, this.id);
+                    if (groupId == this.options.groupId && id != this.id) {
+                        console.log("closing", id, this.id);
+                        this.open = false;
+                    }
+                },
+                [":data-open"]() {
+                    return this.open.toString();
+                },
+            },
 
-	<!-- RapidWeaver Color Picker Stylesheet -->
-	
+            summary: {
+                ["@click"]() {
+                    this.open = !this.open;
+                },
+            },
 
-  <!-- Theme specific media queries -->
-	<!-- <link rel="stylesheet" href="%pathto(css/media_queries.css)%" /> -->
+            content: {
+                ["x-show"]() {
+                    return this.open;
+                },
+            },
+        }));
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("desktopSubmenu", () => ({
+            open: false,
+            closeTimeout: null,
+            closeDelay: 300,
 
-	<!-- User defined styles -->
-	
+            openMenu() {
+                clearTimeout(this.closeTimeout);
+                this.open = true;
+            },
 
-	<!-- Plugin injected code -->
-			<link rel='stylesheet' type='text/css' media='all' href='../rw_common/plugins/stacks/stacks.css?rwcache=774443073' />
-		<link rel='stylesheet' type='text/css' media='all' href='files/stacks_page_page2.css?rwcache=774443073' />
-        
-        
-        
-        
-		
-		
+            startCloseTimer() {
+                this.closeTimeout = setTimeout(() => {
+                    this.closeMenu();
+                }, this.closeDelay);
+            },
 
+            cancelCloseTimer() {
+                clearTimeout(this.closeTimeout);
+            },
 
-</head>
+            closeMenu() {
+                this.open = false;
+            },
 
-<body>
+            handleMouseEnter() {
+                this.openMenu();
+            },
 
+            handleMouseLeave() {
+                this.startCloseTimer();
+            },
+        }));
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("navigationStandard", (id = null) => ({
+            id,
+            open: false,
 
-	<!-- Navigation in Overlay -->
-	<div class="navigation_overlay">
-		<div class="navigation_inner">
+            init() {
+                window.addEventListener("navigation-standard-close", (e) => {
+                    if (this.id === e.detail) {
+                        this.close();
+                    }
+                });
 
-			<div id="navigation_close_button"><i class="fa fa-close fa-2x"></i></div>
+                window.addEventListener("navigation-standard-toggle", (e) => {
+                    if (this.id === e.detail) {
+                        this.toggle();
+                    }
+                });
 
-			<div class="navigation_alignment">
-				<div class="container">
-							<div class="navigation_overlay_site_logo"><img src="../rw_common/images/For_students_who_do_more.jpg" width="600" height="280" alt="Birkbeck, University of London logo"/></div>
-							<h1 class="navigation_overlay_site_title">School of Computing and Mathematical Sciences &mdash; Birkbeck, University of London</h1>
-							<div id="social_badges"></div>
-							<!-- <h2 class="navigation_overlay_site_slogan">For students who do more</h2> -->
-							<div id="main_navigation">
-								<ul><li><a href="../" rel="">Home</a></li><li><a href="../key-info/" rel="">Key Information</a></li><li><a href="../reading-list/" rel="">Reading List</a></li><li><a href="../resources/" rel="">Resources</a></li><li><a href="./" rel="" id="current">Sessions</a></li><li><a href="../about/" rel="">About</a></li></ul>
-							</div>
-				</div> <!-- container -->
-			</div> <!-- main_navigation -->
-		</div> <!-- navigation inner -->
-	</div> <!-- navigation_overlay -->
+                window.addEventListener("keyup", (e) => {
+                    if (e.key === "Escape") {
+                        this.close();
+                    }
+                });
 
-	<div id="scroll_up_destination"></div>
+                this.$el.addEventListener("click", (e) => {
+                    const link = e.target.closest("a");
+                    if (link && this.open) {
+                        this.close();
+                    }
+                });
 
-	<div class="blur_wrapper">
+                this.$watch("open", (value) => {
+                    if (value) {
+                        document.body.style.overflow = "hidden";
+                    } else {
+                        document.body.style.overflow = "auto";
+                    }
+                });
+            },
 
-		<!-- Path Theme -->
+            toggle() {
+                if (this.open) {
+                    return this.close();
+                }
 
-		<!-- Banner, Banner Overlay and Banner Content -->
-		<div id="banner">
-			<!-- Branding // Site Title, Logo and Navigation -->
-			<div id="sticky_container">
-				<div class="navigation_bar container">
-					<div class="site_logo"><img src="../rw_common/images/For_students_who_do_more.jpg" width="600" height="280" alt="Birkbeck, University of London logo"/></div> <h1 class="site_title">School of Computing and Mathematical Sciences &mdash; Birkbeck, University of London</h1>
-					<div id="navigation_toggle"><i class="fa fa-bars"></i></div>
-				</div>
-			</div>
+                this.open = true;
+            },
 
-			<div id="inner_banner">
-				<!-- Site Slogan -->
-				<div id="banner_content">
-					<h2 id="slogan">For students who do more</h2>
-				</div>
-			</div>
+            close() {
+                if (!this.open) {
+                    return;
+                }
 
-			<!-- Breadcrumb Trail -->
-			<div class="banner_breadcrumb">
-				<div class="container width_adjustment">
-					<ul><li><a href="../">Home</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</li><li><a href="./">Sessions</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;</li></ul>
-				</div>
-			</div>
+                this.open = false;
+            },
 
-		</div>
+            backdrop: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click"]() {
+                    this.close();
+                },
+            },
 
-		<div id="content_container" class="container width_adjustment">
-			<div class="row">
-
-			  <div id="content">
-					
-<div id='stacks_out_1' class='stacks_top'><div id='stacks_in_1' class=''><div id='stacks_out_2' class='stacks_out'><div id='stacks_in_2' class='stacks_in markdown_stack'><h3 id="willappearhereasadropdownmenu.">Will appear here as a dropdown menu.</h3></div></div></div></div>
-
-					<div class="clearer"></div>
-				</div>
-
-			  <aside id="sidebar">
-					<h3 id="sidebar_title"></h3>
-					
-
-					<div id="archives">
-						
-					</div>
-				</aside>
-
-			</div>
-		</div>
-
-		<footer>
-			<div class="rapidweaver_footer container width_adjustment">
-				&copy; 2013-25 Birkbeck, University of London <a href="#" class="DDDE3945-70AF-42B0-A272-2B170B4344C5">Contact Me (Keith Mannock)</a><script type="text/javascript">(function(){ var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":k.";var _rwObsfuscatedHref3 = "man";var _rwObsfuscatedHref4 = "noc";var _rwObsfuscatedHref5 = "k@b";var _rwObsfuscatedHref6 = "bk.";var _rwObsfuscatedHref7 = "ac.";var _rwObsfuscatedHref8 = "uk";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7+_rwObsfuscatedHref8; Array.from(document.getElementsByClassName("DDDE3945-70AF-42B0-A272-2B170B4344C5")).forEach(function(x){x.href = _rwObsfuscatedHref});})()</script>
-			</div>
-		</footer>
-
-	</div>
-
-	<!-- jQuery 1.8 is included in the theme internally -->
-  <script src="../rw_common/themes/Voyager/js/jquery.min.js?rwcache=774443073"></script>
-
-	<!-- Base RapidWeaver javascript -->
-	<script async type="text/javascript" src="../rw_common/themes/Voyager/javascript.js?rwcache=774443073"></script>
-
-  <!-- Elixir theme specific javascript, along with jQuery Easing and a few other elements -->
-  <script src="../rw_common/themes/Voyager/js/elixir.js?rwcache=774443073"></script>
-
-	<!-- Style variations -->
-	<script src="../rw_common/themes/Voyager/js/fitvids.js?rwcache=774443073"></script>
-		<script src="../rw_common/themes/Voyager/js/sidebar/sidebar_hidden.js?rwcache=774443073"></script>
-		
-
-	<!-- User defined javascript -->
-	
-
-<rapidweaver-badge url="https://www.bbk.ac.uk" position-x="left" position-y="bottom" transition="slide" delay-type="time" delay="1000" mode="auto" target="_blank"><img src= "../rw_common/assets/bbklogo-shield-only.png" alt="Birkbeck Icon" /><p>Birkbeck, University of London</p></rapidweaver-badge>
-<script src="../rw_common/assets/rw-badge.js?rwcache=774443073"></script>
-</body>
-
+            menu: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click.away"]() {
+                    this.close();
+                },
+            },
+        }));
+    });
+</script>  
+ </body>
 </html>
